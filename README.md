@@ -171,7 +171,7 @@ riaktive.setIdStrategy( sliver.getId );
 ## Get, Put, Mutate, Delete
 These bucket operations should be straight-forward. The one exception is mutate. Riaktive provides this call for cases when you need to read, change and persist the changes and would like to avoid siblings.
 
-> Note: concurrent mutation is still a problem. See [hashqueue](https://github.com/LeanKit-Labs) to limit local concurrency and [consul-locker] for distributed mutual exclusion.
+> Note: concurrent mutation is still a problem. See [hashqueue](https://github.com/LeanKit-Labs/hashqueue) to limit local concurrency and [consul-locker] for distributed mutual exclusion.
 
 ### get( key )
 Get retrieves a document by key.
